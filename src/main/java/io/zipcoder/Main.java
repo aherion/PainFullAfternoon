@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 
+// This is an exercise in which the goal was to accomplish parsing input from a custom (randomized) text file type and outputting
+// in a certain format, as well as providing unit tests for functionality.
+
+
 public class Main {
 
     public String readRawDataToString() throws Exception {

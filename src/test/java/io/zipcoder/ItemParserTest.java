@@ -12,7 +12,7 @@ public class ItemParserTest {
 
     private String rawSingleItem = "naMe:Milk;price:3.23;type:Food;expiration:1/25/2016##";
 
-    //private String rawSingleItemIrregularSeperatorSample = "naMe:MiLK;price:3.23;type:Food^expiration:1/11/2016##";
+    //private String rawSingleItemIrregularSeparatorSample = "naMe:MiLK;price:3.23;type:Food^expiration:1/11/2016##";
 
     private String rawBrokenSingleItem = "naMe:;price:3.23;type:Food;expiration:1/04/2016##";
 

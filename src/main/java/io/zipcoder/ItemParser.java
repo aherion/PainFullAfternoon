@@ -37,7 +37,7 @@ public class ItemParser {
             String expirationDate = findValueForPattern(expirationDatePattern, rawItem);
 
             //once regex patterns are applied, method returns a new Item with appropriate properties to be used for outputting;
-            //capitalizeString() and replace() for "name" output formatting purpose (more explained more in capitalizeString method body
+            //capitalizeString() and replace() for "name" output formatting purpose (more explained more in capitalizeString method body)
             //and parseDouble required to parse String price to a double for price outputting purposes
             return new Item(capitalizeString(name).replace("0", "o"), Double.parseDouble(price), type, expirationDate);
 
@@ -48,7 +48,7 @@ public class ItemParser {
         }
     }
 
-    public String findValueForPattern(String stringPattern, String inputString) throws ItemParseException {
+    private String findValueForPattern(String stringPattern, String inputString) throws ItemParseException {
 
         //setup pattern/matcher for regex application, use case_insensitive to alleviate unnecessary verbosity in above regex patterns
         Pattern p = Pattern.compile(stringPattern, Pattern.CASE_INSENSITIVE);
